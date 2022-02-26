@@ -1,0 +1,19 @@
+<form action="{{ url_for("add_user_data")}}" method="post">
+
+<p>
+    <label for="username">Enter new user name:</label>
+    <input type="text" id="username" name="uname">
+</p>
+
+<p>
+    <label for="userid">Enter new user ID:</label>
+    <input type="number" step="1" min="0" id="userid" name="uid" value="ID">
+</p>
+
+<p>
+    <label for="userscore">Enter new user score:</label>
+    <input type="number" step="1" min="0" id="userscore" name="uscore" value="Score">
+</p>
+
+
+<button type="submit">Add Data</button>

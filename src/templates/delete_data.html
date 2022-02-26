@@ -1,0 +1,18 @@
+<form action="{{ url_for("delete_user_data")}}" method="post">
+
+    <p>
+        <label for="username">Enter user's name to delete:</label>
+        <input type="text" id="username" name="uname">
+    </p>
+
+    <p>
+        <label for="userid">Enter ID of user to delete:</label>
+        <input type="number" step="1" min="0" id="userid" name="uid" value="ID">
+    </p>
+    
+    <p>
+        <label for="userscore">Enter score of user to delete:</label>
+        <input type="number" step="1" min="0" id="userscore" name="uscore" value="Score">
+    </p>
+    
+    <button type="submit">Delete</button>

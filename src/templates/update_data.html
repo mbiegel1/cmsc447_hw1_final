@@ -1,0 +1,23 @@
+<form action="{{ url_for("update_user_data")}}" method="post">
+
+<p>
+    <label for="username">Which user would you like to update?</label>
+    <input type="text" id="username" name="uname">
+</p>
+
+<p>
+    <label for="newname">Enter new user name (enter existing name to keep that name):</label>
+    <input type="text" id="newname" name="nname">
+</p>
+
+<p>
+    <label for="userid">Enter user's new ID (enter existing ID to keep that ID):</label>
+    <input type="number" step="1" min="0" id="userid" name="uid">
+</p>
+
+<p>
+    <label for="userscore">Enter user's new score (enter existing score to keep that score):</label>
+    <input type="number" step="1" min="0" id="userscore" name="uscore">
+</p>
+
+<button type="submit">Update</button>
