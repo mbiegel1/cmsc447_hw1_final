@@ -19,16 +19,16 @@ unable to use either for a front-end. Thus, I had to resort just to pure HTML.
 ### Files
 There are three main files and a folder:
     <br>`flask_backend.py`: Contains the back-end to communicate between HTML and the SQL database
-    `\nsql_data.py`: Contains functionality for adding, updating, reading, and deleting data from the SQL database.
-    `\nscores.db`: Database file that stores data and is accessed by application during use
-    `\ntemplates`: Contains all HTML templates that are used and displayed on each respected page:
-        `home_screen.html`: Interface output for the home screen of the application
-        `add_data.html`: Interface and page for user to interact with when "Add a new user" button is selected
-        `update_data.html`: Interface and page for user to interact with when "Update existing user" button is selected
-        `display_data.html`: Interface and page for user to interact with when "Look up existing user" button is selected
-        `display_all_data.html`: Interface and page for user to interact with when "Display all users" button is selected
-        `delete_data.html`: Interface and page for user to interact with when "Delete existing user" button is selected
-        `delete_all_data.html`: Interface and page for user to interact with when "Delete ALL users" button is selected
+    <br>`\nsql_data.py`: Contains functionality for adding, updating, reading, and deleting data from the SQL database.
+    <br>`\nscores.db`: Database file that stores data and is accessed by application during use
+    <br>`\ntemplates`: Contains all HTML templates that are used and displayed on each respected page:
+        <br>`home_screen.html`: Interface output for the home screen of the application
+        <br>`add_data.html`: Interface and page for user to interact with when "Add a new user" button is selected
+        <br>`update_data.html`: Interface and page for user to interact with when "Update existing user" button is selected
+        <br>`display_data.html`: Interface and page for user to interact with when "Look up existing user" button is selected
+        <br>`display_all_data.html`: Interface and page for user to interact with when "Display all users" button is selected
+        <br>`delete_data.html`: Interface and page for user to interact with when "Delete existing user" button is selected
+        <br>`delete_all_data.html`: Interface and page for user to interact with when "Delete ALL users" button is selected
 
 
 ### Assumptions
