@@ -1,8 +1,10 @@
-# importing Flask and other modules
+# Importing Flask, sqlite3, sql python file, and other modules
 from multiprocessing import connection
 import sqlite3
 import sql_data
 from flask import Flask, request, render_template
+#--------------------------------------------------------------------
+
 
 # Flask constructor for creating app
 app = Flask(__name__)
@@ -205,6 +207,7 @@ def delete_user_data():
 
     return render_template("delete_data.html")
 
+
 ### ------------------------------------------------------------------
 ### delete_all_data()
 ### Route for the "Delete ALL data" button
@@ -228,5 +231,7 @@ def delete_all_data():
 
 ### Main - Launchs the flask app
 if __name__=='__main__':
+    # Runs application in debug mode; for development purposes only
     #app.run(debug=True)
+
     app.run()

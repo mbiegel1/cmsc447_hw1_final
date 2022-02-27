@@ -1,6 +1,6 @@
 # Scores is the table name
 # scores.db is the database file name
-
+# Importing sqlite3
 import sqlite3
 
 ### ------------------------------------------------------------------
