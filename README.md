@@ -36,19 +36,21 @@ There are three main files and a folder:
 
 
 ### Assumptions
-This program assumes you are currently in a virtual environment with flask installed
+This program assumes you are currently in a virtual environment with flask installed.
 If you need to create a virtual environment, follow these steps at this link: 
     `https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/`
 
-Once you have installed and have activated the virtual environment, install flask with: pip3 install Flask
-Then proceed to `Running the application`
+Once you have installed and have activated the virtual environment, install flask with: `pip3 install Flask`
+Then proceed to the `Running the application` section in this README.md
 
 
 ### Running the application
-Launch the python file to start the sever by entering the following command from within the `src/ folder`:
+Make sure a virtual environment is running. Launch the python file to start the sever by entering the 
+following command from within the `src/ folder`:
     <br>`python3 flask_backend.py`<br>
 
-This will start flask and the application, giving you an address to enter into your browser to view the website
+This will start flask and the application, giving you an address to enter into your browser to view the website.
+Then proceed to the `Using the application` section in this README.md
 
 
 ### Using the application
