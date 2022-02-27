@@ -19,10 +19,10 @@ unable to use either for a front-end. Thus, I had to resort just to pure HTML.
 ### Files
 There are three main files and a folder:
     <br>`flask_backend.py`: Contains the back-end to communicate between HTML and the SQL database
-    <br>`\nsql_data.py`: Contains functionality for adding, updating, reading, and deleting data from the SQL database.
-    <br>`\nscores.db`: Database file that stores data and is accessed by application during use
-    <br>`\ntemplates`: Contains all HTML templates that are used and displayed on each respected page:
-        <br>`home_screen.html`: Interface output for the home screen of the application
+    <br>`sql_data.py`: Contains functionality for adding, updating, reading, and deleting data from the SQL database.
+    <br>`scores.db`: Database file that stores data and is accessed by application during use
+    <br>`templates`: Contains all HTML templates that are used and displayed on each respected page:
+        <br>        `home_screen.html`: Interface output for the home screen of the application
         <br>`add_data.html`: Interface and page for user to interact with when "Add a new user" button is selected
         <br>`update_data.html`: Interface and page for user to interact with when "Update existing user" button is selected
         <br>`display_data.html`: Interface and page for user to interact with when "Look up existing user" button is selected
