@@ -18,10 +18,10 @@ unable to use either for a front-end. Thus, I had to resort just to pure HTML.
 
 ### Files
 There are three main files and a folder:
-    `flask_backend.py`: Contains the back-end to communicate between HTML and the SQL database
-    `sql_data.py`: Contains functionality for adding, updating, reading, and deleting data from the SQL database.
-    `scores.db`: Database file that stores data and is accessed by application during use
-    `templates`: Contains all HTML templates that are used and displayed on each respected page:
+    `\nflask_backend.py`: Contains the back-end to communicate between HTML and the SQL database
+    `\nsql_data.py`: Contains functionality for adding, updating, reading, and deleting data from the SQL database.
+    `\nscores.db`: Database file that stores data and is accessed by application during use
+    `\ntemplates`: Contains all HTML templates that are used and displayed on each respected page:
         `home_screen.html`: Interface output for the home screen of the application
         `add_data.html`: Interface and page for user to interact with when "Add a new user" button is selected
         `update_data.html`: Interface and page for user to interact with when "Update existing user" button is selected
@@ -37,7 +37,7 @@ If you need to create a virtual environment, follow these steps at this link:
     `https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/`
 
 Once you have installed and have activated the virtual environment, install flask with: pip3 install Flask
-Then proceed to running the application
+Then proceed to `Running the application`
 
 
 ### Running the application
