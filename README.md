@@ -1,7 +1,7 @@
 # CMSC 447 Homework 1 Submission
 # Mark Biegel
 # Professor Allgood
-# Monday-Wednesday 5:30-6:45 Section
+# Monday/Wednesday 5:30-6:45 Section
 ###
 
 ## Objective
@@ -47,7 +47,7 @@ Then proceed to `Running the application`
 ### Running the application
 Launch the python file to start the sever by entering the following command from within the `src/ folder`:
     <br>`python3 flask_backend.py`<br>
-    
+
 This will start flask and the application, giving you an address to enter into your browser to view the website
 
 
