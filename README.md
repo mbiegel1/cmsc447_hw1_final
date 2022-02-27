@@ -2,6 +2,7 @@
 # Mark Biegel
 # Professor Allgood
 # Monday/Wednesday 5:30-6:45 Section
+# Contact: mbiegel1@umbc.edu
 ###
 
 ## Objective
@@ -36,21 +37,18 @@ There are three main files and a folder:
 
 
 ### Assumptions
-This program assumes you are currently in a virtual environment with flask installed.
-If you need to create a virtual environment, follow these steps at this link: 
-    `https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/`
+This program assumes you have `venv` installed. You can install `venv` using the following command:
+    `sudo pip3 install virtualenv `
 
-Once you have installed and have activated the virtual environment, install flask with: `pip3 install Flask`
-Then proceed to the `Running the application` section in this README.md
+Now, you can clone the repo into a directory. Then proceed to the `Running the application` section in this README.md
 
 
 ### Running the application
-Make sure a virtual environment is running. Launch the python file to start the sever by entering the 
-following command from within the `src/ folder`:
-    <br>`python3 flask_backend.py`<br>
+Navigate to the cloned repo; you should see a file called `crud_app.sh`. Enter the following command to run the application:
+    <br>`./crud_app.sh`<br>
 
 This will start flask and the application, giving you an address to enter into your browser to view the website.
-Then proceed to the `Using the application` section in this README.md
+Then proceed to the `Using the application` section in this README.md.
 
 
 ### Using the application
