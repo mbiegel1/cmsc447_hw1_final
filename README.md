@@ -40,7 +40,7 @@ There are three main files and a folder:
 This program assumes you have `venv` installed. You can install `venv` using the following command:
     <br>`sudo pip3 install virtualenv `
 
-Now, you can clone the repo into a directory. Then proceed to the `Running the application` section in this README.md
+Now, you can clone the repo into a directory. Then proceed to the `Running the application` section in this `README.md`.
 
 
 ### Running the application
@@ -49,13 +49,17 @@ Enter the following command to run the application: `./crud_app.sh`
 
 This will start flask and the application, giving you an address to enter into your browser to view the website.
 The address should be: `http://127.0.0.1:5000/`; however, given the unpredicatbility of computers, it may be different
-for some odd reason, so check the output, specifically where it says "Running on...." to see the address. Open that link.
-Then proceed to the `Using the application` section in this README.md.
+for some odd reason, so check the output, specifically where it says `"Running on...."` to see the address. Open that link.
+
+Then proceed to the `Using the application` section in this `README.md`.
 
 
 ### Using the application
 To navigate the page, click the buttons, and when you're finished with that function, use the browser's
-back-button to go back to the homepage.
+back-button to go back to the homepage. 
+
+*NOTE* The text fields in this program are CASE SENSITIVE; data entered into the table must be entered in the same case 
+sensitivity throughout the application.
 
 On the homepage, there will be 6 buttons stacked in a column, describing their functionality.
     <br>`Add a new user`: Brings to a page to enter new username, id, and score. "Add Data" button will add data into SQL table
@@ -65,3 +69,7 @@ On the homepage, there will be 6 buttons stacked in a column, describing their f
     <br>`Display all data`: Brings to a page for the user to select a "Display" button and display all data in the database
     <br>`Delete existing user`: Brings to a page to enter new username, id, and score. "Delete" button will delete data from SQL table
     <br>`Delete ALL data`: Brings to a page verifying that the user wants to delete all data from the data base. 
+
+*NOTE* If you want to stop the program, use `Ctrl+C` to end the application and not `Ctrl+Z`. `Ctrl+Z` seems to not allow the program to 
+run correctly if you were to relaunch the server and run the application again. If you do hit `Ctrl+Z` to stop the program, the solution 
+that works for me is to close the terminal and relaunch a new one, navigate to the folder, and run the executable again.
