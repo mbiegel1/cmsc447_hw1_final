@@ -45,8 +45,9 @@ Then proceed to `Running the application`
 
 
 ### Running the application
-Launch the python file to start the sever by entering the following command from within the src/ folder:
+Launch the python file to start the sever by entering the following command from within the `src/ folder`:
     <br>`python3 flask_backend.py`<br>
+    
 This will start flask and the application, giving you an address to enter into your browser to view the website
 
 
