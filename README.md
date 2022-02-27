@@ -38,14 +38,14 @@ There are three main files and a folder:
 
 ### Assumptions
 This program assumes you have `venv` installed. You can install `venv` using the following command:
-    `sudo pip3 install virtualenv `
+    <br>`sudo pip3 install virtualenv `
 
 Now, you can clone the repo into a directory. Then proceed to the `Running the application` section in this README.md
 
 
 ### Running the application
-Navigate to the cloned repo; you should see a file called `crud_app.sh`. Enter the following command to run the application:
-    <br>`./crud_app.sh`<br>
+After cloning the repo, navigate to the folder; you should see a file called `crud_app.sh`. 
+Enter the following command to run the application: `./crud_app.sh`
 
 This will start flask and the application, giving you an address to enter into your browser to view the website.
 Then proceed to the `Using the application` section in this README.md.
