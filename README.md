@@ -18,7 +18,7 @@ unable to use either for a front-end. Thus, I had to resort just to pure HTML.
 
 ### Files
 There are three main files and a folder:
-    `\nflask_backend.py`: Contains the back-end to communicate between HTML and the SQL database
+    <br>`flask_backend.py`: Contains the back-end to communicate between HTML and the SQL database
     `\nsql_data.py`: Contains functionality for adding, updating, reading, and deleting data from the SQL database.
     `\nscores.db`: Database file that stores data and is accessed by application during use
     `\ntemplates`: Contains all HTML templates that are used and displayed on each respected page:
