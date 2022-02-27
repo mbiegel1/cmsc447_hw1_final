@@ -66,7 +66,7 @@ def read_data(connection, selected_name):
 
     for record in table:
         if (record[0] == selected_name):
-            return_string = record[0] + " ID: " + str(record[1]) + " Score: " + str(record[2])
+            return_string = record[0] + "<br>ID: " + str(record[1]) + "<br>Score: " + str(record[2])
             connection.close
             return return_string
 
