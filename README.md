@@ -21,8 +21,9 @@ There are three main files and a folder:
     <br>`flask_backend.py`: Contains the back-end to communicate between HTML and the SQL database
     <br>`sql_data.py`: Contains functionality for adding, updating, reading, and deleting data from the SQL database.
     <br>`scores.db`: Database file that stores data and is accessed by application during use
+    <br>
     <br>`templates`: Contains all HTML templates that are used and displayed on each respected page:
-        <br>        `home_screen.html`: Interface output for the home screen of the application
+        <br>`home_screen.html`: Interface output for the home screen of the application
         <br>`add_data.html`: Interface and page for user to interact with when "Add a new user" button is selected
         <br>`update_data.html`: Interface and page for user to interact with when "Update existing user" button is selected
         <br>`display_data.html`: Interface and page for user to interact with when "Look up existing user" button is selected
