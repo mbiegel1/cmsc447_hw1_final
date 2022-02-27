@@ -48,6 +48,8 @@ After cloning the repo, navigate to the folder; you should see a file called `cr
 Enter the following command to run the application: `./crud_app.sh`
 
 This will start flask and the application, giving you an address to enter into your browser to view the website.
+The address should be: `http://127.0.0.1:5000/`; however, given the unpredicatbility of computers, it may be different
+for some odd reason, so check the output, specifically where it says "Running on...." to see the address. Open that link.
 Then proceed to the `Using the application` section in this README.md.
 
 
