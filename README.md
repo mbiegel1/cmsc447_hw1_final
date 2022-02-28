@@ -37,9 +37,8 @@ There are three main files and a folder:
 
 
 ### Assumptions
-This program assumes you have `venv` installed. You can install `venv` using the following command:
-    <br>`sudo pip3 install virtualenv `
-
+This installs the necessary dependencies for using the program when running the `crud_app.sh`.
+See the `requirements.txt` for what the `crud_app.sh` installs.
 Now, you can clone the repo into a directory. Then proceed to the `Running the application` section in this `README.md`.
 
 
