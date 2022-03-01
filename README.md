@@ -37,8 +37,7 @@ There are three main files and a folder:
 
 
 ### Assumptions
-This installs the necessary dependencies for using the program when running the `crud_app.sh`.
-See the `requirements.txt` for what the `crud_app.sh` installs.
+A `requirements.txt` is provided and is run by the `crud_app.sh` executable. A virtual environment is not needed, but recommended.
 Now, you can clone the repo into a directory. Then proceed to the `Running the application` section in this `README.md`.
 
 
@@ -46,11 +45,17 @@ Now, you can clone the repo into a directory. Then proceed to the `Running the a
 After cloning the repo, navigate to the folder; you should see a file called `crud_app.sh`. 
 Enter the following command to run the application: `./crud_app.sh`
 
+This will install the necessary dependencies to run the application. Then, navigate to the `src/` folder and run the following command:
+<br>`python3 flask_backend.py`
 This will start flask and the application, giving you an address to enter into your browser to view the website.
 The address should be: `http://127.0.0.1:5000/`; however, given the unpredicatbility of computers, it may be different
 for some odd reason, so check the output, specifically where it says `"Running on...."` to see the address. Open that link.
 
-Then proceed to the `Using the application` section in this `README.md`.
+*NOTE: If the `crud_app.sh` does not work, and you are unable to launch the application, try running `./crud_app_backup.sh`.
+This executable will create an environment, install Flask and necessary dependencies, and run the application. This executable
+has only been tested on Linux systems*
+
+Then, proceed to the `Using the application` section in this `README.md`.
 
 
 ### Using the application
