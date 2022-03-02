@@ -1,64 +1,171 @@
-<p>
-    <button id="buttonOne" class="float-left submit-button" >Add a new user</button>
+<html>
+    <style>
+        h1 {
+            text-align: center;
+            margin: 1em 0 0.5em 0;
+            font-weight: 600;
+            font-family: 'Titillium Web', sans-serif;
+            position: relative;  
+            font-size: 36px;
+            line-height: 40px;
+            padding: 15px 15px 15px;
+            color: #000000;
+            box-shadow: 
+                inset -250px 0 50px rgb(40, 131, 236),
+                inset 250px 0 50px rgb(40, 131, 236);
+            border-radius: 0 10px 0 10px;
 
-    <script type="text/javascript">
-        document.getElementById("buttonOne").onclick = function () {
-            location.href = "http://127.0.0.1:5000/add";
-        };
-    </script>
-</p>
 
-<p>
-    <button id="buttonTwo" class="float-left submit-button" >Update existing user</button>
+        }
+        p {
+            text-align: center;
+        }
 
-    <script type="text/javascript">
-        document.getElementById("buttonTwo").onclick = function () {
-            location.href = "http://127.0.0.1:5000/update";
-        };
-    </script>
-</p>
+        button {
+            display: inline-block;
+            background-color: #0b84bd;
+            border-radius: 10px;
+            border: 4px double #000000;
+            color: #ffffff;
+            text-align: center;
+            font-size: 28px;
+            padding: 30px;
+            width: 370px;
+            -webkit-transition: all 0.1s;
+            -moz-transition: all 0.1s;
+            -o-transition: all 0.1s;
+            transition: all 0.1s;
+            cursor: pointer;
+            margin: 50px;
+        }
+        button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.25s;
+        }
+        button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        button:hover {
+            background-color: #0c3e68;
+        }
+        button:hover span {
+            padding-right: 25px;
+        }
+        button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
 
-<br>
+        .container {
+            height: 300px;
+            position: relative;
+        }
 
-<p>
-    <button id="buttonThree" class="float-left submit-button" >Look up existing user</button>
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
 
-    <script type="text/javascript">
-        document.getElementById("buttonThree").onclick = function () {
-            location.href = "http://127.0.0.1:5000/display";
-        };
-    </script>
-</p>
+    </style>
 
-<p>
-    <button id="buttonFour" class="float-left submit-button" >Dsiplay all users</button>
 
-    <script type="text/javascript">
-        document.getElementById("buttonFour").onclick = function () {
-            location.href = "http://127.0.0.1:5000/display_all";
-        };
-    </script>
-</p>
+    <body style="background-color:rgb(236, 236, 236);">
 
-<br>
+        <head>
+            <title>CRUD Database Applications</title>
+        </head>
 
-<p>
-    <button id="buttonFive" class="float-left submit-button" >Delete existing user</button>
+        <h1>CRUD Database Application</h1>
 
-    <script type="text/javascript">
-        document.getElementById("buttonFive").onclick = function () {
-            location.href = "http://127.0.0.1:5000/delete";
-        };
-    </script>
-</p>
+        <div class="container">
+            <div class="center">
 
-<p>
-    <button id="buttonSix" class="float-left submit-button" >Delete ALL users</button>
+                <div class="btn-group">
 
-    <script type="text/javascript">
-        document.getElementById("buttonSix").onclick = function () {
-            location.href = "http://127.0.0.1:5000/delete_all";
-        };
-    </script>
-</p>
+                    <button id="buttonOne" class="float-left submit-button" >Add a new user</button>
+                    <script type="text/javascript">
+                        document.getElementById("buttonOne").onclick = function () {
+                            location.href = "http://127.0.0.1:5000/add";
+                        };
+                    </script>
+            
+            
+                    <button id="buttonTwo" class="float-left submit-button" >Update existing user</button>
+                    <script type="text/javascript">
+                        document.getElementById("buttonTwo").onclick = function () {
+                            location.href = "http://127.0.0.1:5000/update";
+                        };
+                    </script>
+            
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="center">
+
+                <div class="btn-group">
+
+                    <button id="buttonThree" class="float-left submit-button" >Look up existing user</button>
+                    <script type="text/javascript">
+                        document.getElementById("buttonThree").onclick = function () {
+                            location.href = "http://127.0.0.1:5000/display";
+                        };
+                    </script>
+
+
+                    <button id="buttonFour" class="float-left submit-button" >Display all users</button>
+                    <script type="text/javascript">
+                        document.getElementById("buttonFour").onclick = function () {
+                            location.href = "http://127.0.0.1:5000/display_all";
+                        };
+                    </script>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="center">
+
+                <div class="btn-group">
+
+                    <button id="buttonFive" class="float-left submit-button" >Delete existing user</button>
+                    <script type="text/javascript">
+                        document.getElementById("buttonFive").onclick = function () {
+                            location.href = "http://127.0.0.1:5000/delete";
+                        };
+                    </script>
+
+
+                    <button id="buttonSix" class="float-left submit-button" >Delete ALL users</button>
+                    <script type="text/javascript">
+                        document.getElementById("buttonSix").onclick = function () {
+                            location.href = "http://127.0.0.1:5000/delete_all";
+                        };
+                    </script>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
 

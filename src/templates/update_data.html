@@ -1,23 +1,139 @@
-<form action="{{ url_for("update_user_data")}}" method="post">
+<html>
+    <style>
 
-<p>
-    <label for="username">Which user would you like to update?</label>
-    <input type="text" id="username" name="uname">
-</p>
+        h1 {
+            text-align: center;
+            text-align: center;
+            margin: 1em 0 0.5em 0;
+            font-weight: 600;
+            font-family: 'Titillium Web', sans-serif;
+            position: relative;  
+            font-size: 20px;
+            line-height: 30px;
+            padding: 15px 15px 15px;
+            color: #000000;
+            box-shadow: 
+                inset -250px 0 35px rgba(152, 150, 255, 0.938),
+                inset 250px 0 35px rgba(152, 150, 255, 0.938);
+            border-radius: 0 10px 0 10px;
+        }
 
-<p>
-    <label for="newname">Enter new user name (enter existing name to keep that name):</label>
-    <input type="text" id="newname" name="nname">
-</p>
+        p {
+            text-align: center;
+            text-align: center;
+            margin: 1em 0 0.5em 0;
+            font-weight: 600;
+            font-family: 'Titillium Web', sans-serif;
+            position: relative;  
+            font-size: 20px;
+            line-height: 30px;
+            padding: 15px 15px 15px;
+            color: #000000;
+            box-shadow: 
+                inset -250px 0 35px rgb(122, 255, 233),
+                inset 250px 0 35px rgb(122, 255, 233);
+            border-radius: 0 10px 0 10px;
+        }
 
-<p>
-    <label for="userid">Enter user's new ID (enter existing ID to keep that ID):</label>
-    <input type="number" step="1" min="0" id="userid" name="uid">
-</p>
+        button {
+            display: inline-block;
+            background-color: #00899b;
+            border-radius: 10px;
+            border: 4px double #363636;
+            color: #ffffff;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            width: 120px;
+            -webkit-transition: all 0.1s;
+            -moz-transition: all 0.1s;
+            -o-transition: all 0.1s;
+            transition: all 0.1s;
+            cursor: pointer;
+            margin: 50px;
+        }
+        button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.25s;
+        }
+        button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.2s;
+        }
+        button:hover {
+            background-color: #0c6268;
+        }
+        button:hover span {
+            padding-right: 25px;
+        }
+        button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
 
-<p>
-    <label for="userscore">Enter user's new score (enter existing score to keep that score):</label>
-    <input type="number" step="1" min="0" id="userscore" name="uscore">
-</p>
 
-<button type="submit">Update</button>
+        .container {
+            height: 100px;
+            position: relative;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+
+
+    <head>
+        <title>Updating User - CRUD Database</title>
+    </head>
+
+
+    <body style="background-color:rgb(236, 236, 236);">
+
+
+        <form action="{{ url_for("update_user_data")}}" method="post">
+
+        <h1>
+            <label for="username">Enter name of user you would like to update</label>
+            <input type="text" id="username" name="uname">
+
+        </h1>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <p>
+            <label for="newname">Enter new user name (enter existing name to keep that name):</label>
+            <input type="text" id="newname" name="nname">
+
+        </p>
+        <p>
+
+            <label for="userid">Enter user's new ID (enter existing ID to keep that ID):</label>
+            <input type="number" step="1" min="0" id="userid" name="uid">
+        </p>
+        <p>
+
+            <label for="userscore">Enter user's new score (enter existing score to keep that score):</label>
+            <input type="number" step="1" min="0" id="userscore" name="uscore">
+        </p>
+
+
+        <div class="container">
+            <div class="center">
+                <button type="submit">Update</button>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
