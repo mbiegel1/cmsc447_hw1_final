@@ -40,6 +40,9 @@ There are three main files and a folder:
 A `requirements.txt` is provided and is run by the `crud_app.sh` executable. A virtual environment is not needed, but recommended.
 Now, you can clone the repo into a directory. Then proceed to the `Running the application` section in this `README.md`.
 
+*NOTE: This application has been tested on Linux only; operating distribution commands will vary.
+Use linux for the best experience!*
+
 
 ### Running the application
 After cloning the repo, navigate to the folder; you should see a file called `crud_app.sh`. 
